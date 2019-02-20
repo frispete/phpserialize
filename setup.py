@@ -23,12 +23,13 @@ setup(
     author_email='armin.ronacher@active-4.com',
     version='1.3',
     url='http://github.com/mitsuhiko/phpserialize',
-    py_modules=['phpserialize'],
+    py_modules=['phpserialize', 'tests'],
     description='a port of the serialize and unserialize '
                 'functions of php to python.',
     long_description=get_docs(),
     zip_safe=False,
     test_suite='tests',
+    package_data={'.': ['LICENSE']},
     classifiers=[
         'License :: OSI Approved :: BSD License',
         'Programming Language :: PHP',
